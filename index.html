@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Integrales Definidas</title>
+ 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-center mt-4">Calculadora de Integrales Definidas</h1>
+        <div class="calculator mt-4">
+            <p>Ingresa una función en términos de <em>x</em> y los límites de integración. Puedes utilizar números, constantes matemáticas (<code>pi</code>, <code>e</code>), y funciones matemáticas comunes.</p>
+
+            <div class="form-group">
+                <label for="functionInput">Función a integrar (en términos de <em>x</em>):</label>
+                <input type="text" id="functionInput" class="form-control" placeholder="Ejemplos: sin(x), x^2, exp(-x^2)">
+            </div>
+
+            <div class="form-group">
+                <label for="lowerLimit">Límite inferior de integración:</label>
+                <input type="text" id="lowerLimit" class="form-control" placeholder="Ejemplos: 0, -pi/2, -1, sqrt(2)">
+            </div>
+
+            <div class="form-group">
+                <label for="upperLimit">Límite superior de integración:</label>
+                <input type="text" id="upperLimit" class="form-control" placeholder="Ejemplos: pi, 2, e, 5">
+            </div>
+
+            <button id="calculateButton" class="btn btn-primary btn-block">Calcular Integral</button>
+        </div>
+    </div>
+
+    <!-- Modal para mostrar el resultado y la gráfica -->
+    <div class="modal fade" id="resultModal" tabindex="-1" role="dialog" aria-labelledby="resultModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg" role="document"> 
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title" id="resultModalLabel">Resultado de la Integral</h4>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <p id="resultText"></p>
+            
+            <div id="graph" style="width: 100%; height: 400px;"></div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.11.0/math.min.js"></script>
+    <script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+    
+    <script src="main.js"></script>
+</body>
+</html>
