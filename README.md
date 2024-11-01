@@ -1,5 +1,11 @@
 # Desarrollo de la Lógica del Código de la Calculadora de Integrales Definidas
 
+![image](https://github.com/user-attachments/assets/6a366645-bb8b-4f62-af5c-326576b81c5c)
+
+
+![image](https://github.com/user-attachments/assets/aae4cbe1-4e67-4056-872a-7e5050a359ce)
+
+
 ## Introducción
 Esta documentación detalla el script desarrollado para la calculadora de integrales definidas, explicando la implementación de la lógica del código para lograr una funcionalidad correcta, incluyendo la integración de diferentes tecnologías y bibliotecas para cumplir con los objetivos del proyecto.
 
